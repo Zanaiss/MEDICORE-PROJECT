@@ -143,16 +143,16 @@ void MediCoreGUI::drawPatientMenu() {
         sf::Text wTxt(msg, font, 18); wTxt.setFillColor(sf::Color(0, 102, 51)); wTxt.setPosition(50, 90); window.draw(wTxt);
     }
 
-    sf::RectangleShape b1(sf::Vector2f(250, 40)); b1.setPosition(50, 150); b1.setFillColor(sf::Color(0, 102, 204)); sf::Text t1("View Appts (GUI)", font, 16); t1.setFillColor(sf::Color::White); t1.setPosition(60, 160); window.draw(b1); window.draw(t1);
-    sf::RectangleShape b2(sf::Vector2f(250, 40)); b2.setPosition(50, 210); b2.setFillColor(sf::Color(0, 153, 51)); sf::Text t2("Book Appointment (GUI)", font, 16); t2.setFillColor(sf::Color::White); t2.setPosition(60, 220); window.draw(b2); window.draw(t2);
-    sf::RectangleShape b3(sf::Vector2f(250, 40)); b3.setPosition(50, 270); b3.setFillColor(sf::Color(204, 51, 0)); sf::Text t3("Cancel Appointment (GUI)", font, 16); t3.setFillColor(sf::Color::White); t3.setPosition(60, 280); window.draw(b3); window.draw(t3);
-    sf::RectangleShape b4(sf::Vector2f(250, 40)); b4.setPosition(50, 330); b4.setFillColor(sf::Color(102, 0, 153)); sf::Text t4("Search Doctor by Spec (GUI)", font, 16); t4.setFillColor(sf::Color::White); t4.setPosition(60, 340); window.draw(b4); window.draw(t4);
-    sf::RectangleShape b5(sf::Vector2f(250, 40)); b5.setPosition(50, 390); b5.setFillColor(sf::Color(102, 0, 153)); sf::Text t5("View Time Slots (GUI)", font, 16); t5.setFillColor(sf::Color::White); t5.setPosition(60, 400); window.draw(b5); window.draw(t5);
+    sf::RectangleShape b1(sf::Vector2f(250, 40)); b1.setPosition(50, 150); b1.setFillColor(sf::Color(0, 102, 204)); sf::Text t1("View Appts ", font, 16); t1.setFillColor(sf::Color::White); t1.setPosition(60, 160); window.draw(b1); window.draw(t1);
+    sf::RectangleShape b2(sf::Vector2f(250, 40)); b2.setPosition(50, 210); b2.setFillColor(sf::Color(0, 153, 51)); sf::Text t2("Book Appointment ", font, 16); t2.setFillColor(sf::Color::White); t2.setPosition(60, 220); window.draw(b2); window.draw(t2);
+    sf::RectangleShape b3(sf::Vector2f(250, 40)); b3.setPosition(50, 270); b3.setFillColor(sf::Color(204, 51, 0)); sf::Text t3("Cancel Appointment ", font, 16); t3.setFillColor(sf::Color::White); t3.setPosition(60, 280); window.draw(b3); window.draw(t3);
+    sf::RectangleShape b4(sf::Vector2f(250, 40)); b4.setPosition(50, 330); b4.setFillColor(sf::Color(102, 0, 153)); sf::Text t4("Search Doctor by Spec ", font, 16); t4.setFillColor(sf::Color::White); t4.setPosition(60, 340); window.draw(b4); window.draw(t4);
+    sf::RectangleShape b5(sf::Vector2f(250, 40)); b5.setPosition(50, 390); b5.setFillColor(sf::Color(102, 0, 153)); sf::Text t5("View Time Slots ", font, 16); t5.setFillColor(sf::Color::White); t5.setPosition(60, 400); window.draw(b5); window.draw(t5);
 
-    sf::RectangleShape b6(sf::Vector2f(250, 40)); b6.setPosition(450, 150); b6.setFillColor(sf::Color(0, 102, 204)); sf::Text t6("View Bills (GUI)", font, 16); t6.setFillColor(sf::Color::White); t6.setPosition(460, 160); window.draw(b6); window.draw(t6);
-    sf::RectangleShape b7(sf::Vector2f(250, 40)); b7.setPosition(450, 210); b7.setFillColor(sf::Color(204, 153, 0)); sf::Text t7("Pay Bill (GUI)", font, 16); t7.setFillColor(sf::Color::White); t7.setPosition(460, 220); window.draw(b7); window.draw(t7);
-    sf::RectangleShape b8(sf::Vector2f(250, 40)); b8.setPosition(450, 270); b8.setFillColor(sf::Color(204, 153, 0)); sf::Text t8("Top Up Balance (GUI)", font, 16); t8.setFillColor(sf::Color::White); t8.setPosition(460, 280); window.draw(b8); window.draw(t8);
-    sf::RectangleShape b9(sf::Vector2f(250, 40)); b9.setPosition(450, 330); b9.setFillColor(sf::Color(0, 102, 204)); sf::Text t9("View Medical Records (GUI)", font, 16); t9.setFillColor(sf::Color::White); t9.setPosition(460, 340); window.draw(b9); window.draw(t9);
+    sf::RectangleShape b6(sf::Vector2f(250, 40)); b6.setPosition(450, 150); b6.setFillColor(sf::Color(0, 102, 204)); sf::Text t6("View Bills ", font, 16); t6.setFillColor(sf::Color::White); t6.setPosition(460, 160); window.draw(b6); window.draw(t6);
+    sf::RectangleShape b7(sf::Vector2f(250, 40)); b7.setPosition(450, 210); b7.setFillColor(sf::Color(204, 153, 0)); sf::Text t7("Pay Bill ", font, 16); t7.setFillColor(sf::Color::White); t7.setPosition(460, 220); window.draw(b7); window.draw(t7);
+    sf::RectangleShape b8(sf::Vector2f(250, 40)); b8.setPosition(450, 270); b8.setFillColor(sf::Color(204, 153, 0)); sf::Text t8("Top Up Balance ", font, 16); t8.setFillColor(sf::Color::White); t8.setPosition(460, 280); window.draw(b8); window.draw(t8);
+    sf::RectangleShape b9(sf::Vector2f(250, 40)); b9.setPosition(450, 330); b9.setFillColor(sf::Color(0, 102, 204)); sf::Text t9("View Medical Records ", font, 16); t9.setFillColor(sf::Color::White); t9.setPosition(460, 340); window.draw(b9); window.draw(t9);
 
     sf::RectangleShape logoutBtn(sf::Vector2f(200, 40)); logoutBtn.setPosition(300, 500); logoutBtn.setFillColor(sf::Color(153, 0, 0));
     sf::Text logoutText("LOGOUT", font, 20); logoutText.setFillColor(sf::Color::White); logoutText.setPosition(355, 508); window.draw(logoutBtn); window.draw(logoutText);
@@ -179,29 +179,31 @@ void MediCoreGUI::drawDoctorMenu() {
         sf::Text wTxt(msg, font, 18); wTxt.setFillColor(sf::Color(0, 102, 51)); wTxt.setPosition(50, 90); window.draw(wTxt);
     }
 
-    sf::RectangleShape vBtn(sf::Vector2f(250, 50)); vBtn.setPosition(100, 150); vBtn.setFillColor(sf::Color(0, 102, 204)); sf::Text vText("View All Appts (GUI)", font, 16); vText.setFillColor(sf::Color::White); vText.setPosition(110, 165); window.draw(vBtn); window.draw(vText);
-    sf::RectangleShape cBtn(sf::Vector2f(250, 50)); cBtn.setPosition(100, 220); cBtn.setFillColor(sf::Color(0, 153, 51)); sf::Text cText("Mark Appt Complete (GUI)", font, 16); cText.setFillColor(sf::Color::White); cText.setPosition(110, 235); window.draw(cBtn); window.draw(cText);
-    sf::RectangleShape nBtn(sf::Vector2f(250, 50)); nBtn.setPosition(100, 290); nBtn.setFillColor(sf::Color(204, 102, 0)); sf::Text nText("Mark Appt No-Show (GUI)", font, 16); nText.setFillColor(sf::Color::White); nText.setPosition(110, 305); window.draw(nBtn); window.draw(nText);
-    sf::RectangleShape wBtn(sf::Vector2f(250, 50)); wBtn.setPosition(400, 150); wBtn.setFillColor(sf::Color(102, 0, 153)); sf::Text wText("+ Write Prescription (GUI)", font, 16); wText.setFillColor(sf::Color::White); wText.setPosition(410, 165); window.draw(wBtn); window.draw(wText);
-    sf::RectangleShape hBtn(sf::Vector2f(250, 50)); hBtn.setPosition(400, 220); hBtn.setFillColor(sf::Color(0, 102, 204)); sf::Text hText("Patient History (GUI)", font, 16); hText.setFillColor(sf::Color::White); hText.setPosition(410, 235); window.draw(hBtn); window.draw(hText);
+    sf::RectangleShape vBtn(sf::Vector2f(250, 50)); vBtn.setPosition(100, 150); vBtn.setFillColor(sf::Color(0, 102, 204)); sf::Text vText("View All Appts ", font, 16); vText.setFillColor(sf::Color::White); vText.setPosition(110, 165); window.draw(vBtn); window.draw(vText);
+    sf::RectangleShape cBtn(sf::Vector2f(250, 50)); cBtn.setPosition(100, 220); cBtn.setFillColor(sf::Color(0, 153, 51)); sf::Text cText("Mark Appt Complete ", font, 16); cText.setFillColor(sf::Color::White); cText.setPosition(110, 235); window.draw(cBtn); window.draw(cText);
+    sf::RectangleShape nBtn(sf::Vector2f(250, 50)); nBtn.setPosition(100, 290); nBtn.setFillColor(sf::Color(204, 102, 0)); sf::Text nText("Mark Appt No-Show ", font, 16); nText.setFillColor(sf::Color::White); nText.setPosition(110, 305); window.draw(nBtn); window.draw(nText);
+    sf::RectangleShape wBtn(sf::Vector2f(250, 50)); wBtn.setPosition(400, 150); wBtn.setFillColor(sf::Color(102, 0, 153)); sf::Text wText("+ Write Prescription ", font, 16); wText.setFillColor(sf::Color::White); wText.setPosition(410, 165); window.draw(wBtn); window.draw(wText);
+    sf::RectangleShape hBtn(sf::Vector2f(250, 50)); hBtn.setPosition(400, 220); hBtn.setFillColor(sf::Color(0, 102, 204)); sf::Text hText("Patient History ", font, 16); hText.setFillColor(sf::Color::White); hText.setPosition(410, 235); window.draw(hBtn); window.draw(hText);
     sf::RectangleShape logoutBtn(sf::Vector2f(200, 40)); logoutBtn.setPosition(300, 500); logoutBtn.setFillColor(sf::Color(153, 0, 0)); sf::Text logoutText("LOGOUT", font, 20); logoutText.setFillColor(sf::Color::White); logoutText.setPosition(355, 508); window.draw(logoutBtn); window.draw(logoutText);
 }
 
 void MediCoreGUI::handleAdminEvents(sf::Event& event) {
     if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
         sf::Vector2f m = window.mapPixelToCoords(sf::Vector2i(event.mouseButton.x, event.mouseButton.y)); float mx = m.x; float my = m.y;
+
         if (mx >= 50 && mx <= 300 && my >= 150 && my <= 190) { listType = 4; listPage = 0; currentState = VIEW_LIST; }
         else if (mx >= 50 && mx <= 300 && my >= 210 && my <= 250) { tbName.clear(); tbAge.clear(); tbGender.clear(); tbContact.clear(); tbPass.clear(); tbBal.clear(); statusMessage[0] = '\0'; currentState = ADMIN_ADD_PATIENT; }
         else if (mx >= 50 && mx <= 300 && my >= 270 && my <= 310) { tbPromptID.clear(); promptAction = 1; statusMessage[0] = '\0'; currentState = PROMPT_ID; }
         else if (mx >= 50 && mx <= 300 && my >= 330 && my <= 370) { listType = 8; listPage = 0; currentState = VIEW_LIST; }
         else if (mx >= 50 && mx <= 300 && my >= 390 && my <= 430) { listType = 7; listPage = 0; currentState = VIEW_LIST; }
+        else if (mx >= 50 && mx <= 300 && my >= 450 && my <= 490) { tbPromptID.clear(); promptAction = 10; statusMessage[0] = '\0'; currentState = PROMPT_ID; }
 
         else if (mx >= 450 && mx <= 700 && my >= 150 && my <= 190) { listType = 5; listPage = 0; currentState = VIEW_LIST; }
         else if (mx >= 450 && mx <= 700 && my >= 210 && my <= 250) { tbDName.clear(); tbDSpec.clear(); tbDContact.clear(); tbDPass.clear(); tbDFee.clear(); statusMessage[0] = '\0'; currentState = ADMIN_ADD_DOCTOR; }
         else if (mx >= 450 && mx <= 700 && my >= 270 && my <= 310) { tbPromptID.clear(); promptAction = 9; statusMessage[0] = '\0'; currentState = PROMPT_ID; }
         else if (mx >= 450 && mx <= 700 && my >= 330 && my <= 370) { systemApp.viewSecurityLog(); copyStr(statusMessage, "Check Console for Security Log!"); }
         else if (mx >= 450 && mx <= 700 && my >= 390 && my <= 430) { statusMessage[0] = '\0'; currentState = VIEW_REPORT; }
-        else if (mx >= 300 && mx <= 500 && my >= 500 && my <= 540) { systemApp.logout(); loggedInUserID = 0; currentState = LOGIN; }
+        else if (mx >= 300 && mx <= 500 && my >= 520 && my <= 560) { systemApp.logout(); loggedInUserID = 0; currentState = LOGIN; }
     }
 }
 void MediCoreGUI::drawAdminMenu() {
@@ -213,20 +215,21 @@ void MediCoreGUI::drawAdminMenu() {
         sf::Text wTxt(msg, font, 18); wTxt.setFillColor(sf::Color(0, 102, 51)); wTxt.setPosition(50, 90); window.draw(wTxt);
     }
 
-    sf::RectangleShape b1(sf::Vector2f(250, 40)); b1.setPosition(50, 150); b1.setFillColor(sf::Color(0, 102, 204)); sf::Text t1("View All Patients (GUI)", font, 16); t1.setFillColor(sf::Color::White); t1.setPosition(60, 160); window.draw(b1); window.draw(t1);
-    sf::RectangleShape b2(sf::Vector2f(250, 40)); b2.setPosition(50, 210); b2.setFillColor(sf::Color(0, 153, 51)); sf::Text t2("+ Add Patient (GUI)", font, 16); t2.setFillColor(sf::Color::White); t2.setPosition(60, 220); window.draw(b2); window.draw(t2);
-    sf::RectangleShape b3(sf::Vector2f(250, 40)); b3.setPosition(50, 270); b3.setFillColor(sf::Color(204, 51, 0)); sf::Text t3("- Remove Patient (GUI)", font, 16); t3.setFillColor(sf::Color::White); t3.setPosition(60, 280); window.draw(b3); window.draw(t3);
-    sf::RectangleShape b4(sf::Vector2f(250, 40)); b4.setPosition(50, 330); b4.setFillColor(sf::Color(0, 102, 204)); sf::Text t4("View Unpaid Bills (GUI)", font, 16); t4.setFillColor(sf::Color::White); t4.setPosition(60, 340); window.draw(b4); window.draw(t4);
-    sf::RectangleShape b5(sf::Vector2f(250, 40)); b5.setPosition(50, 390); b5.setFillColor(sf::Color(0, 102, 204)); sf::Text t5("View All Appointments (GUI)", font, 16); t5.setFillColor(sf::Color::White); t5.setPosition(60, 400); window.draw(b5); window.draw(t5);
+    sf::RectangleShape b1(sf::Vector2f(250, 40)); b1.setPosition(50, 150); b1.setFillColor(sf::Color(0, 102, 204)); sf::Text t1("View All Patients ", font, 16); t1.setFillColor(sf::Color::White); t1.setPosition(60, 160); window.draw(b1); window.draw(t1);
+    sf::RectangleShape b2(sf::Vector2f(250, 40)); b2.setPosition(50, 210); b2.setFillColor(sf::Color(0, 153, 51)); sf::Text t2("+ Add Patient ", font, 16); t2.setFillColor(sf::Color::White); t2.setPosition(60, 220); window.draw(b2); window.draw(t2);
+    sf::RectangleShape b3(sf::Vector2f(250, 40)); b3.setPosition(50, 270); b3.setFillColor(sf::Color(204, 51, 0)); sf::Text t3("- Remove Patient ", font, 16); t3.setFillColor(sf::Color::White); t3.setPosition(60, 280); window.draw(b3); window.draw(t3);
+    sf::RectangleShape b4(sf::Vector2f(250, 40)); b4.setPosition(50, 330); b4.setFillColor(sf::Color(0, 102, 204)); sf::Text t4("View Unpaid Bills ", font, 16); t4.setFillColor(sf::Color::White); t4.setPosition(60, 340); window.draw(b4); window.draw(t4);
+    sf::RectangleShape b5(sf::Vector2f(250, 40)); b5.setPosition(50, 390); b5.setFillColor(sf::Color(0, 102, 204)); sf::Text t5("View All Appointments ", font, 16); t5.setFillColor(sf::Color::White); t5.setPosition(60, 400); window.draw(b5); window.draw(t5);
 
-    sf::RectangleShape b6(sf::Vector2f(250, 40)); b6.setPosition(450, 150); b6.setFillColor(sf::Color(0, 102, 204)); sf::Text t6("View All Doctors (GUI)", font, 16); t6.setFillColor(sf::Color::White); t6.setPosition(460, 160); window.draw(b6); window.draw(t6);
-    sf::RectangleShape b7(sf::Vector2f(250, 40)); b7.setPosition(450, 210); b7.setFillColor(sf::Color(0, 153, 51)); sf::Text t7("+ Add Doctor (GUI)", font, 16); t7.setFillColor(sf::Color::White); t7.setPosition(460, 220); window.draw(b7); window.draw(t7);
-    sf::RectangleShape b8(sf::Vector2f(250, 40)); b8.setPosition(450, 270); b8.setFillColor(sf::Color(204, 51, 0)); sf::Text t8("- Remove Doctor (GUI)", font, 16); t8.setFillColor(sf::Color::White); t8.setPosition(460, 280); window.draw(b8); window.draw(t8);
+    sf::RectangleShape b11(sf::Vector2f(250, 40)); b11.setPosition(50, 450); b11.setFillColor(sf::Color(153, 0, 153)); sf::Text t11("Discharge Patient ", font, 16); t11.setFillColor(sf::Color::White); t11.setPosition(60, 460); window.draw(b11); window.draw(t11);
+
+    sf::RectangleShape b6(sf::Vector2f(250, 40)); b6.setPosition(450, 150); b6.setFillColor(sf::Color(0, 102, 204)); sf::Text t6("View All Doctors ", font, 16); t6.setFillColor(sf::Color::White); t6.setPosition(460, 160); window.draw(b6); window.draw(t6);
+    sf::RectangleShape b7(sf::Vector2f(250, 40)); b7.setPosition(450, 210); b7.setFillColor(sf::Color(0, 153, 51)); sf::Text t7("+ Add Doctor ", font, 16); t7.setFillColor(sf::Color::White); t7.setPosition(460, 220); window.draw(b7); window.draw(t7);
+    sf::RectangleShape b8(sf::Vector2f(250, 40)); b8.setPosition(450, 270); b8.setFillColor(sf::Color(204, 51, 0)); sf::Text t8("- Remove Doctor ", font, 16); t8.setFillColor(sf::Color::White); t8.setPosition(460, 280); window.draw(b8); window.draw(t8);
     sf::RectangleShape b9(sf::Vector2f(250, 40)); b9.setPosition(450, 330); b9.setFillColor(sf::Color(102, 102, 102)); sf::Text t9("View Security Log (Console)", font, 16); t9.setFillColor(sf::Color::White); t9.setPosition(460, 340); window.draw(b9); window.draw(t9);
-    sf::RectangleShape b10(sf::Vector2f(250, 40)); b10.setPosition(450, 390); b10.setFillColor(sf::Color(102, 102, 102)); sf::Text t10("Daily Report (GUI)", font, 16); t10.setFillColor(sf::Color::White); t10.setPosition(460, 400); window.draw(b10); window.draw(t10);
+    sf::RectangleShape b10(sf::Vector2f(250, 40)); b10.setPosition(450, 390); b10.setFillColor(sf::Color(102, 102, 102)); sf::Text t10("Daily Report ", font, 16); t10.setFillColor(sf::Color::White); t10.setPosition(460, 400); window.draw(b10); window.draw(t10);
 
-    sf::RectangleShape logoutBtn(sf::Vector2f(200, 40)); logoutBtn.setPosition(300, 500); logoutBtn.setFillColor(sf::Color(153, 0, 0));
-    sf::Text logoutText("LOGOUT", font, 20); logoutText.setFillColor(sf::Color::White); logoutText.setPosition(355, 508); window.draw(logoutBtn); window.draw(logoutText);
+    sf::RectangleShape logoutBtn(sf::Vector2f(200, 40)); logoutBtn.setPosition(300, 520); logoutBtn.setFillColor(sf::Color(153, 0, 0)); sf::Text logoutText("LOGOUT", font, 20); logoutText.setFillColor(sf::Color::White); logoutText.setPosition(355, 528); window.draw(logoutBtn); window.draw(logoutText);
     sf::Text status(statusMessage, font, 16); status.setFillColor(sf::Color::Red); status.setPosition(250, 110); window.draw(status);
 }
 
@@ -359,10 +362,10 @@ void MediCoreGUI::handlePromptIDEvents(sf::Event& event) {
         tbPromptID.checkClick(mx, my);
         if (mx >= 300 && mx <= 500 && my >= 360 && my <= 400) {
             try {
-                if (promptAction == 8) { 
+                if (promptAction == 8) {
                     copyStr(searchBuffer, tbPromptID.getText()); listType = 9; listPage = 0; currentState = VIEW_LIST; tbPromptID.clear();
                 }
-                else if (promptAction == 4) { 
+                else if (promptAction == 4) {
                     searchPatID = myAtoi(tbPromptID.getText()); listType = 11; listPage = 0; currentState = VIEW_LIST; tbPromptID.clear();
                 }
                 else if (promptAction == 7) {
@@ -376,13 +379,16 @@ void MediCoreGUI::handlePromptIDEvents(sf::Event& event) {
                     else if (promptAction == 5) { systemApp.cancelAppointment(loggedInUserID, id); copyStr(statusMessage, "Cancelled & Refunded!"); }
                     else if (promptAction == 6) { systemApp.payBill(loggedInUserID, id); copyStr(statusMessage, "Bill Paid!"); }
                     else if (promptAction == 9) { systemApp.removeDoctor(id); copyStr(statusMessage, "Doctor Removed!"); }
+                    // NEW DISCHARGE LOGIC ADDED HERE
+                    else if (promptAction == 10) { systemApp.dischargePatient(id); copyStr(statusMessage, "Patient Discharged & Archived!"); }
                     tbPromptID.clear();
                 }
             }
             catch (const HospitalException& e) { copyStr(statusMessage, e.what()); }
         }
         else if (mx >= 300 && mx <= 500 && my >= 420 && my <= 460) {
-            if (promptAction == 1 || promptAction == 9) currentState = ADMIN_MENU;
+            // BACK BUTTON ROUTING FOR THE NEW ACTION 10
+            if (promptAction == 1 || promptAction == 9 || promptAction == 10) currentState = ADMIN_MENU;
             else if (promptAction >= 5 && promptAction <= 8) currentState = PATIENT_MENU;
             else currentState = DOCTOR_MENU;
         }
@@ -394,6 +400,7 @@ void MediCoreGUI::drawPromptIDScreen() {
     if (promptAction == 1) tStr = "Remove Patient ID"; else if (promptAction == 2) tStr = "Mark Appt Complete"; else if (promptAction == 3) tStr = "Mark Appt No-Show";
     else if (promptAction == 4) tStr = "View History for Pat ID"; else if (promptAction == 5) tStr = "Cancel Appointment ID"; else if (promptAction == 6) tStr = "Pay Bill ID";
     else if (promptAction == 7) tStr = "Enter Top Up Amount"; else if (promptAction == 8) tStr = "Enter Spec (e.g. Cardiology)"; else if (promptAction == 9) tStr = "Remove Doctor ID";
+    else if (promptAction == 10) tStr = "Discharge Patient ID"; 
 
     sf::Text title(tStr, font, 24); title.setFillColor(sf::Color(0, 51, 102)); title.setPosition(150, 100); window.draw(title);
     sf::Text l1("Input:", font, 18); l1.setFillColor(sf::Color::Black); l1.setPosition(220, 255); window.draw(l1); tbPromptID.draw(window);

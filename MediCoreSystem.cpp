@@ -440,6 +440,66 @@ void MediCoreSystem::viewSecurityLog() {
     file.close();
 }
 
+void MediCoreSystem::dischargePatient(int patientID) {
+    Patient* p = patients.findByID(patientID);
+    if (!p) {
+        throw InvalidInputException("Patient ID not found.");
+    }
+
+    Bill* bArr = bills.getAll();
+    for (int i = 0; i < bills.getSize(); i++) {
+        if (bArr[i].getPatientID() == patientID && myStrCmp(bArr[i].getStatus(), "unpaid") == 0) {
+            throw HospitalException("Cannot discharge patient with unpaid bills.");
+        }
+    }
+
+    Appointment* aArr = appointments.getAll();
+    for (int i = 0; i < appointments.getSize(); i++) {
+        if (aArr[i].getPatientID() == patientID && myStrCmp(aArr[i].getStatus(), "pending") == 0) {
+            throw HospitalException("Cannot discharge patient with pending appointments.");
+        }
+    }
+
+    ofstream outFile("discharged.txt", std::ios::app);
+    if (outFile.is_open()) {
+
+        outFile << p->getID() << "," << p->getName() << "," << p->getAge() << ","
+            << p->getGender() << "," << p->getContact() << "," << p->getPassword() << ","
+            << p->getBalance() << "\n";
+
+        for (int i = 0; i < appointments.getSize(); i++) {
+            if (aArr[i].getPatientID() == patientID) {
+                outFile << "Appt," << aArr[i].getID() << "," << aArr[i].getPatientID() << ","
+                    << aArr[i].getDoctorID() << "," << aArr[i].getDate() << ","
+                    << aArr[i].getTimeSlot() << "," << aArr[i].getStatus() << "\n";
+            }
+        }
+
+  
+        Prescription* rxArr = prescriptions.getAll();
+        for (int i = 0; i < prescriptions.getSize(); i++) {
+            if (rxArr[i].getPatientID() == patientID) {
+                outFile << "Rx," << rxArr[i].getID() << "," << rxArr[i].getAppointmentID() << ","
+                    << rxArr[i].getPatientID() << "," << rxArr[i].getDoctorID() << ","
+                    << rxArr[i].getDate() << "," << rxArr[i].getMedicines() << ","
+                    << rxArr[i].getNotes() << "\n";
+            }
+        }
+
+
+        for (int i = 0; i < bills.getSize(); i++) {
+            if (bArr[i].getPatientID() == patientID) {
+                outFile << "Bill," << bArr[i].getID() << "," << bArr[i].getPatientID() << ","
+                    << bArr[i].getAppointmentID() << "," << bArr[i].getAmount() << ","
+                    << bArr[i].getStatus() << "," << bArr[i].getDate() << "\n";
+            }
+        }
+        outFile.close();
+    }
+
+    removePatient(patientID);
+}
+
 void MediCoreSystem::generateDailyReport() {
     char today[15];
     getTodayDate(today);
@@ -470,3 +530,4 @@ void MediCoreSystem::generateDailyReport() {
     cout << "Revenue Collected Today: PKR " << rev << "\n";
     cout << "======================================\n";
 }
+

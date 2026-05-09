@@ -11,7 +11,6 @@
 
 class MediCoreSystem {
 private:
- 
     // Session State
     int currentUserID;
     int currentUserRole; // 1 = Patient, 2 = Doctor, 3 = Admin, 0 = Logged Out
@@ -59,6 +58,7 @@ public:
     void viewPatientHistory(int doctorID, int patientID);
 
     // Admin Operations
+    void dischargePatient(int patientID);
     void addPatient(const char* name, int age, char gender, const char* contact, const char* pass, float balance);
     void removePatient(int patientID);
     void addDoctor(const char* name, const char* spec, const char* contact, const char* pass, float fee);
